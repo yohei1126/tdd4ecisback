@@ -1,5 +1,5 @@
-#ifndef LIGHT_CONTROLLER_SPY_H
-#define LIGHT_CONTROLLER_SPY_H
+#ifndef LIGHTCONTROLLERSPY_H
+#define LIGHTCONTROLLERSPY_H
 
 #include "LightController.h"
 
@@ -14,4 +14,4 @@ int LightControllerSpy_GetLastId();
 
 int LightControllerSpy_GetLastState();
 
-#endif /* LIGHT_CONTROLLER_SPY_H */
+#endif /* LIGHTCONTROLLERSPY_H */

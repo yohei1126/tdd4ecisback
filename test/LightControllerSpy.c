@@ -16,6 +16,11 @@ void LightController_On(int id) {
 	lastState = LIGHT_ON;
 }
 
+void LightController_Off(int id) {
+	lastId = id;
+	lastState = LIGHT_OFF;
+}
+
 int LightControllerSpy_GetLastId() {
 	return lastId;
 }
