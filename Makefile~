@@ -8,7 +8,7 @@ ifeq ($(CPPUTEST_USE_STD_C_LIB), N)
 else
 	CPP_PLATFORM = Gcc
 endif
-CPPUTEST_HOME = ./CppUTest
+CPPUTEST_HOME = .
 OLD_MAKE = oldmake
 
 CPPUTEST_ENABLE_DEBUG = Y
@@ -16,7 +16,7 @@ CPPUTEST_ENABLE_DEBUG = Y
 SRC_DIRS = \
 	src/CppUTest \
 	src/Platforms/$(CPP_PLATFORM)
-
+	
 TEST_SRC_DIRS = \
 	tests
 
