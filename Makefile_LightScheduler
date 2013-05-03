@@ -1,0 +1,30 @@
+#---------
+#
+# CppUTest Examples Makefile
+#
+#----------
+
+#Set this to @ to keep the makefile quiet
+ifndef SILENCE
+	SILENCE = @
+endif
+
+#--- Inputs ----#
+COMPONENT_NAME = LightScheduler
+CPPUTEST_HOME = CppUTest
+
+CPPUTEST_USE_EXTENSIONS = Y
+CPP_PLATFORM = Gcc
+
+SRC_DIRS = \
+	./src\
+
+TEST_SRC_DIRS = \
+	./test\
+
+INCLUDE_DIRS =\
+  ./src\
+  ./test\
+  $(CPPUTEST_HOME)/include\
+
+include $(CPPUTEST_HOME)/build/MakefileWorker.mk

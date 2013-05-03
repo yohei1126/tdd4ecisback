@@ -1,31 +1,30 @@
-#This makefile makes all the main book code with CppUTest test harness
+all: LightScheduler
 
-#Set this to @ to keep the makefile quiet
-SILENCE = @
+clean: cleanLightScheduler
 
-#---- Outputs ----#
-COMPONENT_NAME = LightScheduler
+cleanAll: cleanLightScheduler cleanCppUTest cleanCppUTest
 
-#--- Inputs ----#
-CPPUTEST_HOME = CppUTest
-CPP_PLATFORM = Gcc
-PROJECT_HOME_DIR = .
+LightScheduler: CppUTest CppUTestExt
+	make -i -f Makefile_LightScheduler
 
-SRC_DIRS = \
+cleanLightScheduler:
+	make -i -f Makefile_LightScheduler clean
 
-TEST_SRC_DIRS = \
-	.\
+CppUTest: CppUTest/lib/libCppUTest.a
 
-INCLUDE_DIRS =\
-  .\
-  $(CPPUTEST_HOME)/include\
+cleanCppUTest:
+	make -i -C CppUTest clean
 
-MOCKS_SRC_DIRS = \
-	mocks\
+CppUTestExt: CppUTest/lib/libCppUTestExt.a
 
-CPPUTEST_WARNINGFLAGS = -Wall -Wswitch-default -Werror 
-#CPPUTEST_CFLAGS = -std=c89 
-CPPUTEST_CFLAGS += -Wall -Wstrict-prototypes -pedantic
-LD_LIBRARIES = -lpthread
+cleanCppUTestExe:
+	make -i -C CppUTest clean
 
-include $(CPPUTEST_HOME)/build/MakefileWorker.mk
+CppUTest/lib/libCppUTest.a:
+	pwd
+	make -i -C CppUTest
+
+CppUTest/lib/libCppUTestExt.a:
+	pwd
+	make -i -C CppUTest extensions
+
