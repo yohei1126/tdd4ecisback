@@ -27,4 +27,3 @@ CppUTest/lib/libCppUTest.a:
 CppUTest/lib/libCppUTestExt.a:
 	pwd
 	make -i -C CppUTest extensions
-

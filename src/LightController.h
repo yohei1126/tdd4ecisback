@@ -1,6 +1,16 @@
 #ifndef LIGHTCONTROLLER_H_
 #define LIGHTCONTROLLER_H_
 
+enum {
+	LIGHT_ID_UNKNOWN = -1
+};
+
+enum {
+	LIGHT_STATE_UNKNOWN = -1,
+	LIGHT_OFF = 0,
+	LIGHT_ON = 1
+};
+
 void LightController_Create();
 
 void LightController_Destroy();

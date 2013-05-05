@@ -17,6 +17,7 @@ CPPUTEST_USE_EXTENSIONS = Y
 CPP_PLATFORM = Gcc
 
 SRC_DIRS = \
+  ./src\
 
 TEST_SRC_DIRS = \
 	./test\
