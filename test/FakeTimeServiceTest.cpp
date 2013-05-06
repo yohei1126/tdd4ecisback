@@ -2,6 +2,7 @@
 
 extern "C" {
 #include "FakeTimeService.h"
+#include "LightScheduler.h"
 }
 
 TEST_GROUP(FakeTimeService) {

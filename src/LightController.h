@@ -2,14 +2,15 @@
 #define LIGHTCONTROLLER_H_
 
 enum {
-	LIGHT_ID_UNKNOWN = -1
+	LIGHT_ID_UNKNOWN = -1,
+	UNUSED
 };
 
-enum {
+typedef enum {
 	LIGHT_STATE_UNKNOWN = -1,
 	LIGHT_OFF = 0,
 	LIGHT_ON = 1
-};
+} LightState;
 
 void LightController_Create();
 

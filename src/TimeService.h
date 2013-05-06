@@ -6,17 +6,6 @@ typedef struct {
 	int dayOfWeek;
 } Time;
 
-enum {
-	TIME_UNKNOWN = -1,
-	MONDAY,
-	TUESDAY,
-	WEDNESDAY,
-	THURSDAY,
-	FRIDAY,
-	SATURDAY,
-	SUNDAY
-};
-
 void TimeService_Create();
 
 void TimeService_Destroy();

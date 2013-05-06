@@ -5,6 +5,6 @@
 
 int LightControllerSpy_GetLastId();
 
-int LightControllerSpy_GetLastState();
+LightState LightControllerSpy_GetLastState();
 
 #endif /* LIGHTCONTROLLERSPY_H */
