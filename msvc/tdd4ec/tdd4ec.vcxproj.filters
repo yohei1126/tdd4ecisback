@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{bce45cf0-771a-4b68-9e5d-8b3a1c912d96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test">
+      <UniqueIdentifier>{301fa13a-e503-449b-8469-716f2cf2b096}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\HomeAutomation">
+      <UniqueIdentifier>{f27f6d3f-4156-446a-96f6-e3bc5b849582}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test\HomeAutomation">
+      <UniqueIdentifier>{eaaeeb8b-3091-4f28-a2e7-945a7dbe6791}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\HomeAutomation\LightController.h">
+      <Filter>src\HomeAutomation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\HomeAutomation\LightScheduler.h">
+      <Filter>src\HomeAutomation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\HomeAutomation\TimeService.h">
+      <Filter>src\HomeAutomation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\test\HomeAutomation\FakeTimeService.h">
+      <Filter>test\HomeAutomation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\test\HomeAutomation\LightControllerSpy.h">
+      <Filter>test\HomeAutomation</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\HomeAutomation\LightScheduler.c">
+      <Filter>src\HomeAutomation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\test\HomeAutomation\LightSchedulerTest.cpp">
+      <Filter>test\HomeAutomation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\test\HomeAutomation\FakeTimeService.c">
+      <Filter>test\HomeAutomation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\test\HomeAutomation\FakeTimeServiceTest.cpp">
+      <Filter>test\HomeAutomation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\test\HomeAutomation\LightControllerSpy.c">
+      <Filter>test\HomeAutomation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\test\HomeAutomation\LightControllerSpyTest.cpp">
+      <Filter>test\HomeAutomation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\test\AllTests.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
