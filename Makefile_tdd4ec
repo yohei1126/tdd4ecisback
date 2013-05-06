@@ -10,7 +10,7 @@ ifndef SILENCE
 endif
 
 #--- Inputs ----#
-COMPONENT_NAME = LightScheduler
+COMPONENT_NAME = tdd4ec
 CPPUTEST_HOME = CppUTest
 
 CPPUTEST_USE_EXTENSIONS = Y
@@ -22,6 +22,7 @@ SRC_DIRS = \
 TEST_SRC_DIRS = \
 	./test\
 	./test/HomeAutomation\
+	./test/Sprintf\
 
 INCLUDE_DIRS =\
   ./src/HomeAutomation\

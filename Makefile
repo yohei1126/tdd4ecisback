@@ -1,14 +1,14 @@
-all: LightScheduler
+all: tdd4ec
 
-clean: cleanLightScheduler
+clean: cleantdd4ec
 
-cleanAll: cleanLightScheduler cleanCppUTest cleanCppUTest
+cleanAll: cleantdd4ec cleanCppUTest cleanCppUTest
 
-LightScheduler: CppUTest CppUTestExt
-	make -i -f Makefile_LightScheduler
+tdd4ec: CppUTest CppUTestExt
+	make -i -f Makefile_tdd4ec
 
-cleanLightScheduler:
-	make -i -f Makefile_LightScheduler clean
+cleantdd4ec:
+	make -i -f Makefile_tdd4ec clean
 
 CppUTest: CppUTest/lib/libCppUTest.a
 
