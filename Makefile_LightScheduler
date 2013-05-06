@@ -17,14 +17,15 @@ CPPUTEST_USE_EXTENSIONS = Y
 CPP_PLATFORM = Gcc
 
 SRC_DIRS = \
-  ./src\
+  ./src/HomeAutomation\
 
 TEST_SRC_DIRS = \
 	./test\
+	./test/HomeAutomation\
 
 INCLUDE_DIRS =\
-  ./src\
-  ./test\
+  ./src/HomeAutomation\
+  ./test/HomeAutomation\
   $(CPPUTEST_HOME)/include\
 
 include $(CPPUTEST_HOME)/build/MakefileWorker.mk
