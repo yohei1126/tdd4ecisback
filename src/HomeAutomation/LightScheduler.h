@@ -6,11 +6,11 @@ typedef enum {
 	EVERYDAY = 100, WEEKDAY, WEEKEND
 } Day;
 
-void LightScheduler_Create();
+void LightScheduler_Create(void);
 
-void LightScheduler_Destroy();
+void LightScheduler_Destroy(void);
 
-void LightScheduler_Wakeup();
+void LightScheduler_Wakeup(void);
 
 void LightScheduler_SchedulerTurnOn(int id, Day day, int minuteOfDay);
 
